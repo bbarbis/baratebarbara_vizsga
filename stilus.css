@@ -1,0 +1,96 @@
+body{
+    background-image: url(hatter/);
+}
+main{
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-areas: "h h h"
+    "n n n"
+    "a a as"
+    "f f f";
+}
+header{
+    grid-area: h;
+}
+
+nav{
+    grid-area: n;
+    background-color: green;
+}
+nav li{
+    float: left;
+    padding: 5px;
+}
+nav li a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+  
+}
+li a:hover {
+    background-color: #111;
+  }
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: green;
+}
+article{
+    grid-area: a;
+    padding: 15px; 
+
+}
+article img{
+    float: right;
+    width: 200px;
+    border: 1px solid grey;
+    padding: 5px;
+    margin-left: 12px;
+    border-radius: 4px;
+}
+article li{
+    text-align: justify;
+}
+aside{
+    grid-area: as;
+}
+aside img{
+    width: 100%;
+}
+footer{
+    grid-area: f;
+    text-align: center;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 3px solid green;
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif
+}
+
+article li{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width:600px){
+    main{
+        width: 80%;
+        margin: auto;
+        grid-template-areas: "h h h"
+        "n n n"
+        "a a as"
+        "f f f";
+    }
+}
